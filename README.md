@@ -3,6 +3,7 @@ GANs implemented using keras
 
 ## Implementation
 
+- __PIX2PIX__
 ```python
 from easygans.pix2pix import *
 

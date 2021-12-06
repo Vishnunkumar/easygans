@@ -25,3 +25,8 @@ predictor.predict(img_res=(256, 256))
 - [__DiscoGAN__]
 - [__CycleGAN__]
 - [__InfoGAN__]
+
+
+## Credits
+
+This repo is a reduced and modified version which is forked from [Keras-GAN](https://github.com/eriklindernoren/Keras-GAN) with some tunable parameters

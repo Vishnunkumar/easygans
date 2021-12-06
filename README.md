@@ -3,7 +3,7 @@ GANs implemented using keras
 
 ## Implementation
 
-- __PIX2PIX__
+- [__PIX2PIX__](https://arxiv.org/abs/1611.07004)
 ```python
 from easygans.pix2pix import *
 
@@ -13,4 +13,12 @@ predictor = Predictor(model='saved_model.h5', imgpath='working/image.jpg')
 predictor.predict(img_res=(256, 256))
 ```
 
-- More models will be added soon
+## Roadmap
+
+- [__GAN__]
+- [__PIX2PIX__](https://arxiv.org/abs/1611.07004)
+- [__SRGAN__](https://arxiv.org/abs/1609.04802)
+- [__DCGAN__]
+- [__DiscoGAN__]
+- [__CycleGAN__]
+- [__InfoGAN__]

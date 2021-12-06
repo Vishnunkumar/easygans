@@ -1,9 +1,11 @@
 # easygans
 GANs implemented using keras
 
+
 ## Implementation
 
-- [__PIX2PIX__](https://arxiv.org/abs/1611.07004)
+- __PIX2PIX__
+
 ```python
 from easygans.pix2pix import *
 
@@ -12,6 +14,7 @@ pix2pix.train(epochs=100, batch_size=100)
 predictor = Predictor(model='saved_model.h5', imgpath='working/image.jpg')
 predictor.predict(img_res=(256, 256))
 ```
+
 
 ## Roadmap
 

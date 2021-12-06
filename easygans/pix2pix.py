@@ -48,7 +48,7 @@ class DataLoader():
         imgs_A = np.array(imgs_A)/127.5 - 1.
         imgs_B = np.array(imgs_B)/127.5 - 1.
 
-        return imgs_B, imgs_A
+        return imgs_A, imgs_B
 
     def load_batch(self, batch_size, is_testing=False):
 
@@ -82,7 +82,7 @@ class DataLoader():
             imgs_A = np.array(imgs_A)/127.5 - 1.
             imgs_B = np.array(imgs_B)/127.5 - 1.
 
-            yield imgs_B, imgs_A
+            yield imgs_A, imgs_B
 
     def imread(self, path):
         return scipy.misc.imread(path, mode='RGB').astype(np.float)

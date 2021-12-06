@@ -34,4 +34,4 @@ A simple application to re-color your images is deployed as [Colorify](https://h
 
 ## Credits
 
-This repo is a reduced and modified version which is forked from [Keras-GAN](https://github.com/eriklindernoren/Keras-GAN) with some tunable parameters
+This repo is a reduced and modified version which is forked from [Keras-GAN](https://github.com/eriklindernoren/Keras-GAN) with configurable tunable parameters

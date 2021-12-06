@@ -6,6 +6,10 @@ GANs implemented using keras
 
 - __PIX2PIX__
 
+Input data format:
+
+![Pix2Pix data](dataformats/image_4.png "Target/Source")
+
 ```python
 from easygans.pix2pix import *
 
@@ -14,6 +18,7 @@ pix2pix.train(epochs=100, batch_size=100)
 predictor = Predictor(model='saved_model.h5', imgpath='working/image.jpg')
 predictor.predict(img_res=(256, 256))
 ```
+A simple application to re-color your images are deployed on [Colorify](https://huggingface.co/spaces/vishnun/Colorify)
 
 
 ## Roadmap

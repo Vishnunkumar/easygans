@@ -9,7 +9,6 @@ A class of GANs used in image to image translation tasks like grayscale to color
 
 - Input data format:
 
-Target                   Source
 ![Pix2Pix data](dataformats/image_4.png "Target/Source")
 
 ```python

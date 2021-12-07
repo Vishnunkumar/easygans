@@ -19,7 +19,7 @@ pix2pix.train(epochs=100, batch_size=100)
 predictor = Predictor(model='saved_model.h5', imgpath='working/image.jpg')
 predictor.predict(img_res=(256, 256))
 ```
-- A simple application to re-color your images is deployed as [Colorify](https://huggingface.co/spaces/vishnun/Colorify) on @[Huggingface Spaces](https://huggingface.co/spaces)
+- A simple trained model deployed as an application to re-color your images [Colorify](https://huggingface.co/spaces/vishnun/Colorify) on @[Huggingface Spaces](https://huggingface.co/spaces)
 
 
 ## Roadmap

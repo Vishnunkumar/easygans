@@ -1,5 +1,5 @@
 # easygans
-GANs implemented using keras, under development
+Easily train your GANS using keras, please note that this has only few configurational params and is good for beginners to learns about GANs.
 
 ## Implementation
 

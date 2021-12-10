@@ -1,3 +1,15 @@
+from __future__ import print_function, division
+import matplotlib.pyplot as plt
+import sys
+import numpy as np
+import scipy
+import os
+from tensorflow.keras.datasets import mnist
+from tensorflow.keras.layers import Input, Dense, Reshape, Flatten, Dropout
+from tensorflow.keras.layers import BatchNormalization, Activation, ZeroPadding2D, LeakyReLU, UpSampling2D, Conv2D
+from tensorflow.keras.models import Sequential, Model
+from tensorflow.keras.optimizers import Adam
+
 class DCGAN():
   
     def __init__(self, dataset_path, img_rows, img_cols, channels, convolution_scale):

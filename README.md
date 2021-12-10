@@ -3,6 +3,19 @@ Easily train your GANS using keras, please note that this has only few configura
 
 ## Implementation
 
+### __DCGAN__
+
+A class of GANs used in generation of images from noise, unlike conventional GANS the underlying building block are convolutional layers and proved to be more efficient than the later.
+
+- Input data format:
+
+```python
+from easygans.dcgan import *
+
+dcgan = DCGAN(dataset_path='data_path', img_rows=256, img_cols=256, channels=3, convolution_scale=1)
+dcgan.train(epochs=100, batch_size=100)
+```
+
 ### __PIX2PIX__
 
 A class of GANs used in image to image translation tasks like grayscale to color, edges to solids etc. In the training phase they take in both the source and target images for the generator to learn and fool the discriminator after certain number of iterations. U-Net is used as the backbone for the generator as we convoluting and deconvoluting to get the target image. 

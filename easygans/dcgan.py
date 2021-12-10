@@ -63,8 +63,11 @@ class DCGAN():
         return imgs
       
     def imread(self, path):
+        if self.channels == 1:
+            return scipy.misc.imread(path, mode='L').astype(np.float)
         
-        return scipy.misc.imread(path, mode='RGB').astype(np.float)
+        else:
+            return scipy.misc.imread(path, mode='RGB').astype(np.float)
     
     def build_generator(self):
         
